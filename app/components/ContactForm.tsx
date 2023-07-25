@@ -64,7 +64,7 @@ const ContactForm = () => {
     return ( 
     <>
         {submitSuccess ? (
-            <p className="py-3 text-center text-lg font-semibold">Thanks for reaching out, I'll be in touch soon.</p>
+            <p className="py-3 text-center text-lg font-semibold">Thanks for reaching out, Ill be in touch soon.</p>
         ) : (
 
             <div className="max-w-xl lg:max-w-3xl">
