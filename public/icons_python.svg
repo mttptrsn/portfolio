@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="shields" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 198.41 200.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1.77" y1="-395.08" x2="196.35" y2="-562.49" gradientTransform="translate(-5.86 -218.68) scale(.56 -.57)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5a9fd4"/>
+      <stop offset="1" stop-color="#306998"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="271.57" y1="-663.82" x2="202.09" y2="-565.51" gradientTransform="translate(-5.86 -218.68) scale(.56 -.57)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd43b"/>
+      <stop offset="1" stop-color="#ffe873"/>
+    </linearGradient>
+  </defs>
+  <path id="path1948" class="cls-1" d="m98.02,0c-8.18.04-15.99.74-22.87,1.95-20.25,3.58-23.93,11.07-23.93,24.88v18.24h47.86v6.08H33.27c-13.91,0-26.09,8.36-29.9,24.26-4.39,18.23-4.59,29.6,0,48.64,3.4,14.17,11.53,24.26,25.43,24.26h16.45v-21.86c0-15.8,13.67-29.73,29.9-29.73h47.8c13.31,0,23.93-10.96,23.93-24.32V26.83c0-12.97-10.94-22.71-23.93-24.88C114.73.59,106.2-.04,98.02,0Zm-25.88,14.67c4.94,0,8.98,4.1,8.98,9.15,0,5.03-4.04,9.09-8.98,9.09-4.96,0-8.98-4.06-8.98-9.09s4.02-9.15,8.98-9.15Z"/>
+  <path id="path1950" class="cls-2" d="m152.85,51.15v21.25c0,16.48-13.97,30.34-29.9,30.34h-47.8c-13.09,0-23.93,11.21-23.93,24.32v45.57c0,12.97,11.28,20.6,23.93,24.32,15.15,4.45,29.68,5.26,47.8,0,12.05-3.49,23.93-10.51,23.93-24.32v-18.24h-47.8v-6.08h71.73c13.91,0,19.09-9.7,23.93-24.26,5-14.99,4.78-29.41,0-48.64-3.44-13.85-10-24.26-23.93-24.26h-17.96Zm-26.88,115.4c4.96,0,8.98,4.06,8.98,9.09s-4.02,9.15-8.98,9.15-8.98-4.1-8.98-9.15,4.04-9.09,8.98-9.09Z"/>
+</svg>

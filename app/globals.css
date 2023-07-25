@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground-rgb: 16, 12, 8;
+  --background-start-rgb: 245, 245, 245;
+  --background-end-rgb: 255, 255, 255;
+}
+
+.iconColor {
+  color: rgb(16,12,8)
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 245, 245, 245;
+    --background-start-rgb: 3, 3, 3;
+    --background-end-rgb: 0, 0, 0;
+    
+  }
+
+  .iconColor {
+    color: rgb(245,245,245)
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: Barlow;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+
+.flexCenter {
+  @apply flex justify-center items-center;
+}
+.flexBetween {
+  @apply flex justify-between items-center;
+}
+.flexStart {
+  @apply flex items-center justify-start;
+}
+
+.text-small {
+  @apply text-sm font-medium;
+}
+
+.paddings {
+  @apply lg:px-20 py-6 px-2;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  @apply dark:bg-black bg-white;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  @apply dark:bg-white bg-black; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply dark:bg-white/80 bg-black/80; 
+}
+
+.projects-grid {
+  @apply grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mt-10 w-full;
+}
+
+.pageHeading {
+  @apply mt-2 text-2xl  text-center tracking-wide sm:text-3xl md:text-4xl;
+}
+
+.form_field-input {
+  @apply w-full rounded-sm border-t-0 border-l-0 border-r-0  mt-1 dark:text-white p-4 pe-12 text-sm  text-black shadow-sm dark:bg-white/5 bg-black/5 focus:outline-none focus:border-b-white outline-none focus:border-b-2 border-b dark:border-b-white border-b-black/90 focus:ring-0 focus:ring-white;
+
+  }
+
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg17038" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.98 54.97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #117aca;
+      }
+    </style>
+  </defs>
+  <g id="layer1">
+    <g id="logotype">
+      <g id="g17202">
+        <g id="logo">
+          <path id="logo-ne" class="cls-1" d="m19.67,0c-1.07,0-1.94.87-1.94,1.94v13.61h35.94L37.3,0h-17.63"/>
+          <path id="logo-se" class="cls-1" d="m54.98,19.66c0-1.07-.86-1.94-1.94-1.94h-13.6v35.94l15.54-16.37v-17.63"/>
+          <path id="logo-sw" class="cls-1" d="m35.32,54.97c1.07,0,1.94-.87,1.94-1.94v-13.6H1.31l16.37,15.54h17.63"/>
+          <path id="logo-nw" class="cls-1" d="m0,35.31c0,1.07.87,1.95,1.94,1.95h13.6V1.31L0,17.68v17.63"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
