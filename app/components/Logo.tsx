@@ -12,8 +12,8 @@ type Props = {
 export const Logo = ({width, height}: Props) => {
 
   const { theme, setTheme } = useTheme();
-    
-    const logoSrc = theme === 'light' ? '/logo.svg' : '/logo-wt.svg';
+  const logoSrc = theme === 'light' ? '/logo.svg' : '/logo-wt.svg';
+  
   return (
 
   <motion.div
@@ -33,7 +33,7 @@ export const Logo = ({width, height}: Props) => {
     }}
   >
       <Link href="/">
-        <Image src={logoSrc} width={width} height={height} alt="Matthew Peterson" className=""/>
+        <Image src={logoSrc} width={width} height={height} alt="Matthew Peterson" />
       </Link>
   </motion.div>
   )

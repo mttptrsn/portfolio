@@ -1,14 +1,22 @@
 "use client"
 import Link from "next/link";
-import { getThemePreference } from "../lib/actions";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
-
-
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes"
 
 export const ContactButton = () => {
-    const themePref = getThemePreference();
-    const fgColor = themePref === 'light' ? 'black' : 'white';
+
+  const [mounted, setMounted ] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+    useEffect(() => {
+        setMounted(true);
+    },[]);
+
+    if(!mounted) {
+        return null;
+    }
   return (
 
   <motion.div
@@ -30,7 +38,7 @@ export const ContactButton = () => {
       <Link href="/contact">
         <SocialIcon 
             network="email"
-            fgColor={fgColor}
+            fgColor={theme === "light" ? "black" : "white"}
             bgColor="transparent"
             style={{ height: 130 , width: 130}}
              />

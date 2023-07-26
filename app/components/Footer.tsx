@@ -4,7 +4,6 @@ import { Logo } from "./Logo";
 import { usePathname } from "next/navigation";
 import { NavLinks } from "../constants";
 import { SocialBar } from "./SocialBar";
-import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Footer() {
 

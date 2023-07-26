@@ -6,9 +6,6 @@ import { useState, useEffect } from "react";
 
 export const SocialBar = () => {
 
-
-
- 
       const [mounted, setMounted ] = useState(false);
       const { theme, setTheme } = useTheme();
   
@@ -20,8 +17,6 @@ export const SocialBar = () => {
           return null;
       }
       
-    
-
   return (
 
         <div className="flex flexCenter pb-3">
