@@ -1,12 +1,26 @@
 "use client"
 import { SocialIcon } from "react-social-icons";
 import { socialMediaLnks } from "../constants";
-import { getThemePreference } from "../lib/actions";
+import { useTheme } from "next-themes"
+import { useState, useEffect } from "react";
 
 export const SocialBar = () => {
 
-    const themePref = getThemePreference();
-    const fgColor = themePref === 'light' ? 'black' : 'white';
+
+
+ 
+      const [mounted, setMounted ] = useState(false);
+      const { theme, setTheme } = useTheme();
+  
+      useEffect(() => {
+          setMounted(true);
+      },[]);
+  
+      if(!mounted) {
+          return null;
+      }
+      
+    
 
   return (
 
@@ -17,7 +31,7 @@ export const SocialBar = () => {
                         <SocialIcon url={link.href}
                                     key={link.key}
                                     bgColor="transparent"
-                                    fgColor={fgColor}
+                                    fgColor={theme === "light" ? "black" : "white"}
                                     label={link.text}
                                     network={link.network}
                                     target={index < socialMediaLnks.length - 1 ? "_blank" : "_self"}

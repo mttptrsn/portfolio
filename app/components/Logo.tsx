@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import { getThemePreference } from "../lib/actions";
+import { useTheme } from "next-themes"
 import { motion } from "framer-motion";
 
 type Props = {
@@ -10,8 +10,10 @@ type Props = {
 }
 
 export const Logo = ({width, height}: Props) => {
-    const themePref = getThemePreference();
-    const logoSrc = themePref === 'light' ? '/logo.svg' : '/logo-wt.svg';
+
+  const { theme, setTheme } = useTheme();
+    
+    const logoSrc = theme === 'light' ? '/logo.svg' : '/logo-wt.svg';
   return (
 
   <motion.div

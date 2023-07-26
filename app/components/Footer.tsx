@@ -4,17 +4,19 @@ import { Logo } from "./Logo";
 import { usePathname } from "next/navigation";
 import { NavLinks } from "../constants";
 import { SocialBar } from "./SocialBar";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Footer() {
 
     const pathname = usePathname();
     const isHomePage = pathname === '/';
-    const isContactPage = pathname === "/contact"
+
  
 
   return (
     <footer className=" fixed bottom-0 left-0 right-0">
-        <div className="flex flexCenter">
+           
+             <div className="flex flexCenter">
             {!isHomePage && (
                 <div className="dark:bg-black  bg-white rounded-md p-2">
                     <Logo height={33} width={33} /> 
@@ -38,6 +40,7 @@ export default function Footer() {
         <div className="w-screen dark:bg-black bg-white">
 
       <SocialBar />
+ 
         </div>
     </footer>
   )
