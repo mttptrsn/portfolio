@@ -18,11 +18,11 @@ export const SocialBar = (isDarkMode: Props) => {
                           <Link  href={link.href}  target={index < socialMediaLnks.length - 1 ? "_blank" : "_self"}
                            rel={index < socialMediaLnks.length - 1 ? "noopener noreferrer" : ""}>
                               
-                              {isDarkMode ?  <Image src={link.imageUrlBlk}
+                              {isDarkMode ?  <Image src={link.imageUrlWt}
                               width={23}
                               height={23}
                               alt={link.text}                 
-                            /> : <Image src={link.imageUrlWt}
+                            /> : <Image src={link.imageUrlBlk}
                             width={23}
                             height={23}
                             alt={link.text}                 
