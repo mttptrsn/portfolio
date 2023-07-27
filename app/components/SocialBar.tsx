@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 type Props = {
-  isDarkMode: Boolean;
+  isDarkMode: boolean;
 }
 
 export const SocialBar = (isDarkMode: Props) => {
