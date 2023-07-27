@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 609.19 698.93">
  <style>
-            path {
-            fill: white;
+             path {
+            fill: black;
         }
-        @media (prefers-color-scheme: light) {
-            path { fill: black; }
+        @media (prefers-color-scheme: dark) {
+            path { fill: white; }
         }
     </style>
   <path  d="m0,0h247.49v698.93h-67.36V40.07h-23.43v658.86h-65.9V40.07h-23.43v658.86H0V0Z"/>

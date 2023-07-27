@@ -2,7 +2,11 @@ import { socialMediaLnks } from "../constants";
 import Link from "next/link";
 import Image from "next/image";
 
-export const SocialBar = () => {
+type Props = {
+  isDarkMode: Boolean;
+}
+
+export const SocialBar = (isDarkMode: Props) => {
    
   return (
 
@@ -13,11 +17,17 @@ export const SocialBar = () => {
                          <li key={link.href}>  
                           <Link  href={link.href}  target={index < socialMediaLnks.length - 1 ? "_blank" : "_self"}
                            rel={index < socialMediaLnks.length - 1 ? "noopener noreferrer" : ""}>
-                              <Image src={link.imageUrl}
+                              
+                              {isDarkMode ?  <Image src={link.imageUrlBlk}
                               width={23}
                               height={23}
                               alt={link.text}                 
-                            />
+                            /> : <Image src={link.imageUrlWt}
+                            width={23}
+                            height={23}
+                            alt={link.text}                 
+                          />}
+                             
                            </Link>
                            </li>
                         ))}                        

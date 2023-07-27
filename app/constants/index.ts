@@ -6,9 +6,9 @@ export const NavLinks = [
 ];
 
 export const socialMediaLnks = [
-    { href: 'https://github.com/mttptrsn', key: 'github', text: 'gitHub', imageUrl:"/icons-git.svg"},
-    { href: 'https://www.linkedin.com/in/matthewspeterson/', key: 'linkedin', text: 'linkedIn', imageUrl:"/icons-linkedin.svg"},
-    { href: '/contact', key: 'contact', text: 'contact', network: 'email', imageUrl:"/icons-mail.svg"},
+    { href: 'https://github.com/mttptrsn', key: 'github', text: 'gitHub', imageUrlBlk:"/icons-git-blk.svg", imageUrlWt:"/icons-git-wt.svg"},
+    { href: 'https://www.linkedin.com/in/matthewspeterson/', key: 'linkedin', text: 'linkedIn', imageUrlBlk:"/icons-linkedin-blk.svg", imageUrlWt:"/icons-linkedin-wt.svg"},
+    { href: '/contact', key: 'contact', text: 'contact', network: 'email', imageUrlBlk:"/icons-mail-blk.svg",  imageUrlWt:"/icons-mail-wt.svg"},
 ]
 
 export const heroWords = [
