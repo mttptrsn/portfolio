@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96">
+ <style>
+        path {
+            fill: black;
+        }
+        @media (prefers-color-scheme: dark) {
+            path { fill: white; }
+        }
+    </style>
+  <path d="m3.52,18.44l-.22-.13-.07.13H0v59.24h98V18.44H3.52Zm82.18,6l-36.66,20.18L13.95,24.44h71.75ZM6,71.69V26.79l42.97,24.71,43.03-23.68v43.86H6Z"/>
+</svg>

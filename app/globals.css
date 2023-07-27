@@ -24,8 +24,7 @@
   :root {
     --foreground-rgb: 245, 245, 245;
     --background-start-rgb: 3, 3, 3;
-    --background-end-rgb: 0, 0, 0;
-    
+    --background-end-rgb: 0, 0, 0;  
   }
 
   .iconColor {
@@ -42,10 +41,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
-
-.cls-1 {
-  fill: var(--foreground-rgb);
 }
 
 .flexCenter {
