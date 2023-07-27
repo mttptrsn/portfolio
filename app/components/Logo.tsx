@@ -3,8 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useEffect, useState } from 'react';
-import { isDarkModeSupported } from '../utils/darkModeUtils';
-
+import { useTheme } from 'next-themes'
 
 type Props = {
   width: number;
@@ -12,27 +11,34 @@ type Props = {
 };
 
 export const Logo = ({ width, height }: Props) => {
+    
+  const [mounted, setMounted] = useState(false)
+  const { resolvedTheme } = useTheme()
+  
+  let src
+  switch (resolvedTheme) {
+        case 'light':
+          src = '/logo-blk.svg'
+          break
+        case 'dark':
+          src = '/logo-wt.svg'
+          break
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
+        case 'system':
+        default:
+          src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
+          break
+      }
+      
   useEffect(() => {
-    const darkModeSupported = isDarkModeSupported();
-    setIsDarkMode(darkModeSupported);
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      setIsDarkMode(e.matches);
-    };
-
-    // Listen for changes to the dark mode preference
-    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    darkModeQuery.addEventListener('change', handleChange);
-
-    // Clean up the listener on component unmount
-    return () => {
-      darkModeQuery.removeEventListener('change', handleChange);
-    };
-  }, []);
-
+      if (resolvedTheme) {
+          setMounted(true)
+      }
+  }, [resolvedTheme])
+  
+  if (!mounted) {
+      return null
+  }
 
   return (
     <motion.div
@@ -52,7 +58,7 @@ export const Logo = ({ width, height }: Props) => {
       }}
     >
       <Link href="/">        
-        {isDarkMode ? <Image src="logo-wt.svg" width={width} height={height} alt="Matthew Peterson" /> : <Image src="logo-blk.svg" width={width} height={height} alt="Matthew Peterson" /> }
+        <Image src={src} width={width} height={height} alt="Matthew Peterson" /> 
       </Link>
     </motion.div>
   );

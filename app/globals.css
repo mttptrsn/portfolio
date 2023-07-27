@@ -16,31 +16,23 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-.iconColor {
-  color: rgb(16,12,8)
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 245, 245, 245;
-    --background-start-rgb: 3, 3, 3;
-    --background-end-rgb: 0, 0, 0;  
-  }
-
-  .iconColor {
-    color: rgb(245,245,245)
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
   font-family: Barlow;
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-white text-black;
+}
+
+.dark .body-styles {
+  @apply bg-black text-white;
+}
+
+.body-styles {
+  @apply bg-white text-black;
+}
+
+.dark body {
+@apply bg-black text-white;
 }
 
 .flexCenter {
@@ -91,6 +83,4 @@ body {
   @apply w-full rounded-sm border-t-0 border-l-0 border-r-0  mt-1 dark:text-white p-4 pe-12 text-sm  text-black shadow-sm dark:bg-white/5 bg-black/5 focus:outline-none focus:border-b-white outline-none focus:border-b-2 border-b dark:border-b-white border-b-black/90 focus:ring-0 focus:ring-white;
 
   }
-
-
 

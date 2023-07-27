@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import Footer from './components/Footer'
+import Providers from './components/Providers'
+import ThemeSwitcher from './components/ThemeSwitcher'
 
 export const metadata: Metadata = {
   title: 'Full-Stack DevOps Engineer | Software Engineering Portfolio',
@@ -15,12 +17,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='min-h-screen'>
-       
+       <Providers>
+        
         <main>
              {children} 
         </main>
+        <div className='absolute top-3 right-3 max-w-xl z-100'>
+         <ThemeSwitcher /> 
+        </div>
         <Footer />
-          
+        
+        </Providers>
       </body>
     </html>
   )
