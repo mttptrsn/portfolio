@@ -4,7 +4,6 @@ import { Typewriter } from "react-simple-typewriter"
 import { heroWords } from "../constants"
 import { Logo } from "./Logo"
 
- 
 export const Hero = () => {
 
   return (

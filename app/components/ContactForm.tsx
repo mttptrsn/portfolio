@@ -1,14 +1,12 @@
 "use client"
 
 import React, { FormEvent, useState } from 'react'
-import { useRouter } from 'next/navigation';
 import FormField from './FormField';
 import { FormState } from "@/common.types"
 import Button from './Button';
 
 
 const ContactForm = () => {
-    const router = useRouter()
 
     const [submitting, setSubmitting] = useState<boolean>(false);
     const [submitSuccess, setSubmitSuccess] = useState<boolean>(false);
@@ -45,9 +43,7 @@ const ContactForm = () => {
             },
             body: JSONdata,
         }
-    
-        console.log(JSONdata)
-    
+        
         try {
             const res = await fetch(endpoint, options)
             setSubmitSuccess(true);
@@ -58,9 +54,6 @@ const ContactForm = () => {
         }
     }
     
-
-
-
     return ( 
     <>
         {submitSuccess ? (
@@ -68,64 +61,60 @@ const ContactForm = () => {
         ) : (
 
             <div className="max-w-xl lg:max-w-3xl">
-          <div className="relative -mt-16 block mb-10">
-            <h1 className="mt-2 text-2xl font-bold sm:text-3xl md:text-4xl">Contact:</h1>
-          </div>
-          <div>
+                <div className="relative -mt-16 block mb-10">
+                    <h1 className="mt-2 text-2xl font-bold sm:text-3xl md:text-4xl">Contact:</h1>
+                </div>
+            <div>
 
-          <p className="py-3 text-center text-lg font-semibold">Lets get in touch; send me a message so we can talk about what you need and how I can help.</p>
-
+            <p className="py-3 text-center text-lg font-semibold">Lets get in touch; send me a message so we can talk about what you need and how I can help.</p>
         
              <form
-            onSubmit={handleFormSubmit}
-            className="mt-10">
-          <div className='flex flex-wrap gap-6'>
+                onSubmit={handleFormSubmit}
+                className="mt-10">
+                
+                <div className='flex flex-wrap gap-6'>
 
-            <FormField
-                title="Name"
-                state={form.title}
-                placeholder="Name"
-                setState={(value) => handleStateChange('title', value)}
-            />
-          
-            <FormField
-                title="Email"
-                state={form.email}
-                placeholder="Email"
-                setState={(value) => handleStateChange('email', value)}
-            />
+                    <FormField
+                        title="Name"
+                        state={form.title}
+                        placeholder="Name"
+                        setState={(value) => handleStateChange('title', value)}
+                    />
+                
+                    <FormField
+                        title="Email"
+                        state={form.email}
+                        placeholder="Email"
+                        setState={(value) => handleStateChange('email', value)}
+                    />
 
-            <FormField
-                title="Subject"
-                state={form.subject}
-                placeholder="Subject"
-                setState={(value) => handleStateChange('subject', value)}
-            />
-            
-            <FormField
-                title='Message'
-                state={form.message}
-                placeholder="Get in touch."
-                isTextArea
-                setState={(value) => handleStateChange('message', value)}
-            />
-         
-            <div className='w-full flex flexCenter'>
+                    <FormField
+                        title="Subject"
+                        state={form.subject}
+                        placeholder="Subject"
+                        setState={(value) => handleStateChange('subject', value)}
+                    />
+                    
+                    <FormField
+                        title='Message'
+                        state={form.message}
+                        placeholder="Get in touch."
+                        isTextArea
+                        setState={(value) => handleStateChange('message', value)}
+                    />
+                
+                    <div className='w-full flex flexCenter'>
 
-            <Button
-                title={submitting ? `Sending` : `Send`}
-                type="submit"
-                submitting={submitting}
-            />
+                    <Button
+                        title={submitting ? `Sending` : `Send`}
+                        type="submit"
+                        submitting={submitting}
+                    />
             </div>
             </div>
         </form>
         </div>
-        </div>
-         
-          
-            
-       
+        </div> 
     )}
     </>
 )}

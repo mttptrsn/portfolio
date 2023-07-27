@@ -44,6 +44,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.cls-1 {
+  fill: var(--foreground-rgb);
+}
 
 .flexCenter {
   @apply flex justify-center items-center;
