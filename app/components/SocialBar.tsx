@@ -10,7 +10,8 @@ export const SocialBar = () => {
             <ul className="text-small gap-7 flexBetween" >
                         
                         {socialMediaLnks.map((link, index) => (
-                           <Link key={link.href} href={link.href}  target={index < socialMediaLnks.length - 1 ? "_blank" : "_self"}
+                         <li key={link.href}>  
+                          <Link  href={link.href}  target={index < socialMediaLnks.length - 1 ? "_blank" : "_self"}
                            rel={index < socialMediaLnks.length - 1 ? "noopener noreferrer" : ""}>
                               <Image src={link.imageUrl}
                               width={23}
@@ -18,7 +19,7 @@ export const SocialBar = () => {
                               alt={link.text}                 
                             />
                            </Link>
-                         
+                           </li>
                         ))}                        
             </ul>
         </div>
