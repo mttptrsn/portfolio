@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type Props = {
     title: string;
@@ -9,32 +11,62 @@ type Props = {
    }
 
 const XpCard = ({title, dates, highlights, imageUrl, technology}: Props) => {
+
+    const container = {
+        hidden: { opacity: 0 },
+        show: {
+           
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.15
+          }
+        }
+      }
+      
+      const item = {
+        hidden: { opacity: 0 },
+        show: { opacity: 1 }
+      }
+
   return (
-    <article className="flex flex-col p-3 items-center snap-center flex-shrink-0 w-[300px] md:w-[400px] xl:w-[700] shadow-lg dark:shadow-white/30 dark:shadow-sm rounded-sm">
+    <motion.div
+    initial={{
+     y: 100,
+     opacity: 0,
+     scale: 0.5,
+   }}
+   animate={{
+     y: 0,
+     opacity: 1,
+     scale: 1,
+   }}
+   transition={{
+     duration: .75,
+     type: "spring",
+   }}>
+
+   <article className="flex flex-col p-4 items-center mb-60">
         <div className="dark:bg-white rounded-full p-2 h-[50px] w-[50px] flex items-center my-6">
-
-        <Image src={imageUrl} width={50} height={50} alt="company logo" className="mx-auto"/>
+            <Image src={imageUrl} width={50} height={50} alt="company logo" className="mx-auto"/>
         </div>
-        <div className="px-0 md:px-10 text-center my-5">
-            <p className="text-xs tracking-tight ">{dates}</p>  
+        <div className="px-0 md:px-10 text-center my-4">
             <h2 className="text-xl mb-2 tracking-tighter font-light">{title}</h2> 
-           <div className="flex justify-evenly space-x-2">
-            {technology.map((tech)=> (
-                <Image key={tech} src={tech} width={15} height={15} alt="tech icon" />
-            ))}
-           </div>
+            <p className="text-xs tracking-tight ">{dates}</p>  
         </div>
-       <div className="mt-2 px-6">
-        <ul className="divide-y">
-            {highlights.map((hlight)=> (
-                <li key={hlight} className="text-sm  leading-relaxed tracking-wider py-3">{hlight}</li>
-            ))}
-        </ul>
-
-
+        <div className="mt-2 px-6 max-w-lg">
+            <motion.ul 
+                variants={container}
+                initial="hidden"
+                animate="show"
+                
+                className="divide-y">
+                {highlights.map((hlight)=> (
+                    <motion.li key={hlight} variants={item}className="text-sm leading-relaxed tracking-wider py-4">{hlight}</motion.li>
+                ))}
+            </motion.ul>
        </div>
-
     </article>
+    </motion.div>
   )
 }
 export default XpCard
