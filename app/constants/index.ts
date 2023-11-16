@@ -12,14 +12,17 @@ export const socialMediaLnks = [
 ]
 
 export const heroWords = [
-    " DevOps Professional",
-    " Agile Practitioner",
-    " Seasoned Analyst",
-    " Development Advocate",
-    " Software Engineer",
-    " Fullstack Developer",
-    " Nice guy, Team Player",
+    "Value for Value Advocate",
+    "Creative Design & Development Enthusiast",
+    "Analytical Thinker & Problem Solver",
+    "Friendly & Effective Communicator",
+    "Entrepreneurial Mindset & Nice Guy",
+    "Detail-Oriented & Organized Project Manager",
+    "Innovative & Out-of-the-Box Solutions Advocate",
+    "Cross-Functional Team Collaborator",
+    "Adaptable, Easygoing Multitasker",
 ]
+
 
 export const workExperience = [
     { title: "Contract / Freelance", imageUrl:"/logo-blk.svg", dates:"2022 - present", technology: ["/icons_html.svg", "/icons_css.svg", "icons_javascript.svg", "/icons_react.svg", "/icons_python.svg", "/icons_aws.svg", "/icons_gunicorn.svg", "/icons_nodejs.svg", "/icons_nextjs.svg", "/icons_flask.svg"], highlights:["Developed a full-stack web application for a content management system, employing gunicorn, Heroku, Python, and React.", "Provided development consultation for a project aimed at automating inventory updates for a Shopify Store, also creating a script to assist with targeted marketing.", "Innovated a bridge that employed the Whisper speech-to-text AI to convert podcast mp3 files into international SRT subtitle format transcripts."] },
@@ -29,9 +32,9 @@ export const workExperience = [
 ]
 
 export const projectSamples = [
-/* 
-    { title: "p1 - coming soon", imageUrl:"/profile.jpg", githubUrl:"https://github.com", liveSiteUrl:"https://github.com", description: "Coming Soon"},
-    { title: "p2 - coming soon", imageUrl:"/profile.jpg", githubUrl:"https://github.com", liveSiteUrl:"https://github.com", description: "Coming Soon"},
-    { title: "p3 - coming soon", imageUrl:"/profile.jpg", githubUrl:"https://github.com", liveSiteUrl:"https://github.com", description: "Coming Soon"},
-    { title: "p4 - coming soon", imageUrl:"/profile.jpg", githubUrl:"https://github.com", liveSiteUrl:"https://github.com", description: "Coming Soon"},
-  */  ]
+
+    { title: "V4vector", imageUrl:"/projectImages/v4vector.webp", githubUrl:"https://github.com", liveSiteUrl:"https://www.v4vector.com", description: "V4vector is a straightforward, value-driven website offering premium vector art. Users pay what they believe the art is worth, avoiding overpricing. The decision on pricing rests entirely with the user, reflecting the value they place on how the art enhances their brand. The payment process is simple and secure, with transactions handled through Stripe."},
+    { title: "BizReg", imageUrl:"/projectImages/bizreg.webp", githubUrl:"https://github.com", liveSiteUrl:"https://bizreg.capg.me", description: "The BizReg Landing Page is a straightforward, user-friendly interface for business registration. It's designed specifically for entrepreneurs setting up LLCs or Corporations, offering clear navigation and all essential information for registering a business. This is a frontend-only design."},
+    { title: "SiteScan", imageUrl:"/projectImages/sitescan.webp", githubUrl:"https://github.com", liveSiteUrl:"https://sitescan.capg.me", description: "SiteScan is a specialized tool that scans a website's robots.txt file for potential issues that could trigger a suspension by Google Ads. Users have the option to receive a detailed report outlining any compliance issues. Additionally, SiteScan offers further services for those needing extra assistance in resolving identified problems, ensuring full adherence to Google's advertising policies and maintaining a smooth online advertising experience."},
+    { title: "TunedZen", imageUrl:"/projectImages/tunedzen.webp", githubUrl:"https://github.com", liveSiteUrl:"http://tunedzen.com", description: "TunedZen is a simple website that showcases the outcomes of sophisticated asset trading analysis conducted using Python. It presents detailed bullish and bearish risk-reward estimations, offering valuable insights for traders and investors. The analyses on TunedZen are data-driven and rely on advanced Python algorithms to evaluate market trends and potential investment risks."},
+   ]
