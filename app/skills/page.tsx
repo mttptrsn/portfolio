@@ -38,6 +38,12 @@ export default function Skills() {
 
             <div className="md:border-r-0 md:px-10 px-6 w-full">
               <h2 className="font-semibold mb-6 text-lg">Certifications</h2>
+
+              <p className="text-xs text-left tracking-wider">Certified REST Engineer</p>
+              <p className="mb-6 text-sm font-light">CyberNOW Education</p>
+
+              <p className="text-xs text-left tracking-wider">Jump-Start SOC Analyst</p>
+              <p className="mb-6 text-sm font-light">CyberNOW Education</p>
               
               <p className="text-xs text-left tracking-wider">Graduate Certificate in Banking</p>
               <p className="mb-6 text-sm font-light">Pacific Coast Banking School</p>
