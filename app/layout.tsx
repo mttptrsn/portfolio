@@ -5,8 +5,8 @@ import Providers from './components/Providers'
 import ThemeSwitcher from './components/ThemeSwitcher'
 
 export const metadata: Metadata = {
-  title: 'Matthew Peterson: Blending Web Technology with Financial Acumen',
-  description: 'Matthew Peterson combines a diverse educational background, including a Masters in Global Management from Thunderbird School and a BS in Economics from Arizona State University, with a rich professional experience. He holds certifications in AI, Python, and banking, reflecting his multifaceted skill set. His freelance work showcases his proficiency in full-stack web development and AI applications.',
+  title: 'Matthew Peterson: Blending Technology with Financial Acumen',
+  description: 'Matthew Peterson combines a diverse educational background, including a Masters in Global Management from Thunderbird School and a BS in Economics from Arizona State University, with a rich professional experience. He holds certifications in AI, Python, and banking, reflecting his multifaceted skill set.',
 }
 
 export default function RootLayout({
