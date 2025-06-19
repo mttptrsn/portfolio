@@ -13,7 +13,6 @@ export const socialMediaLnks = [
 
 export const heroWords = [
     "Value for Value Advocate",
-    "Cybersecurity Enthusiast",
     "Analytical Thinker & Problem Solver",
     "Friendly & Effective Communicator",
     "Entrepreneurial Mindset & Nice Guy",
