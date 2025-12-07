@@ -1,39 +1,49 @@
-import { NextRequest, NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { NextRequest, NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
+export async function POST(req: NextRequest) {
+  const body = await req.json();
+  console.log(body);
 
-export async function POST(req: NextRequest, res: NextResponse) {
-  const body = await req.json()
-  console.log(body)
+  const userEmail = process.env.SENDING_EMAIL;
+  const userSecret = process.env.SENDING_SECRET;
 
+  if (!userEmail || !userSecret) {
+    console.error("Missing SENDING_EMAIL or SENDING_SECRET env vars");
+    return NextResponse.json(
+      { success: false, error: "Server configuration error" },
+      { status: 500 }
+    );
+  }
 
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: userEmail,
+      pass: userSecret,
+    },
+  });
 
-    let userEmail = process.env.SENDING_EMAIL;
-    let userSecret = process.env.SENDING_SECRET;
-
-    // Create a reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: userEmail,
-            pass: userSecret,
-        },
+  try {
+    const info = await transporter.sendMail({
+      from: userEmail,
+      to: userEmail,
+      subject: `${body.title} - Portfolio Contact: ${body.subject}`,
+      text: `Message from: ${body.email}, ${body.message}`,
     });
 
-    try {
-        // Send mail with defined transport object
-        let info = await transporter.sendMail({
-            from: userEmail, // sender address
-            to: userEmail, // list of receivers
-            subject: `${body.title} - Portfolio Contact: ${body.subject}`, // Subject line
-            text: `Message from: ${body.email}, ${body.message}`, // plain text body
-        });
+    console.log("Message sent:", info.messageId);
 
-        console.log('Message sent: %s', info.messageId);
+    return NextResponse.json(
+      { success: true, messageId: info.messageId },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Failed to send the email:", error);
 
-      
-    } catch (error) {
-        console.error('Failed to send the email:', error);
-      
-    }
+    return NextResponse.json(
+      { success: false, error: "Failed to send email" },
+      { status: 500 }
+    );
+  }
 }
