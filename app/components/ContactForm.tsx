@@ -66,7 +66,7 @@ const ContactForm = () => {
                 </div>
             <div>
 
-            <p className="py-3 text-center text-lg font-semibold">Lets get in touch; send me a message so we can talk about what you need and how I can help.</p>
+            <p className="py-3 text-center text-lg font-semibold">Have a question or want to connect? Send me a message anytime.</p>
         
              <form
                 onSubmit={handleFormSubmit}

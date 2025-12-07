@@ -5,9 +5,11 @@ import Providers from './components/Providers'
 import ThemeSwitcher from './components/ThemeSwitcher'
 
 export const metadata: Metadata = {
-  title: 'Matthew Peterson: Blending Technology with Financial Acumen',
-  description: 'Matthew Peterson combines a diverse educational background, including a Masters in Global Management from Thunderbird School and a BS in Economics from Arizona State University, with a rich professional experience. He holds certifications in AI, Python, and banking, reflecting his multifaceted skill set.',
-}
+  title: 'Matthew Peterson: Exceptional Client Support for Active Traders',
+  description:
+    'In his role within Trader Services at Charles Schwab, Matthew Peterson provides knowledgeable, high-quality support to active trading clients. He combines strong communication skills with a disciplined, analytical approach to helping clients navigate markets and trading platforms.',
+};
+
 
 export default function RootLayout({
   children,

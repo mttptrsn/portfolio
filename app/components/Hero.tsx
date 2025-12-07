@@ -13,7 +13,7 @@ export const Hero = () => {
         <Logo width={300} height={300} />
        
         <div className="mt-10 w-full">
-          <h1 className=" text-left">Matthew Peterson: 
+          <h1 className=" text-left">Matthew Peterson: &nbsp;
             <span className="font-semibold">
               <Typewriter 
                 words={heroWords} 
