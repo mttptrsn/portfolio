@@ -25,13 +25,13 @@ export default function Skills() {
             <div className="border-r md:px-10 px-6 w-full text-right">
               <h2 className="mb-6 font-semibold  text-lg">Education</h2>
 
-              <p className="text-xs tracking-wider">Masters Global Management</p>
+              <p className="text-xs tracking-wider">Master of Global Management</p>
               <p className="mb-6 text-sm font-light">Thunderbird School of Global Management</p>
 
               <p className="text-xs tracking-wider">Graduate Certificate in Banking</p>
               <p className="mb-6 text-sm font-light">Pacific Coast Banking School</p>
 
-              <p className="text-xs tracking-wider">BS Economics</p>
+              <p className="text-xs tracking-wider">Bachelor of Science in Economics</p>
               <p className="mb-6 text-sm font-light">Arizona State University</p>
 
 
@@ -47,6 +47,9 @@ export default function Skills() {
               <p className="mb-6 text-sm font-light">FINRA</p>
               
               <p className="text-xs text-left tracking-wider">Series 63</p>
+              <p className="mb-6 text-sm font-light">FINRA</p>
+              
+              <p className="text-xs text-left tracking-wider">Series 57</p>
               <p className="mb-6 text-sm font-light">FINRA</p>
               
             </div>

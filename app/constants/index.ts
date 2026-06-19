@@ -63,17 +63,7 @@ export const workExperience = [
         ],
     },
 
-    {
-        title: "Commercial Real Estate",
-        imageUrl: "/logos_realestate.svg",
-        dates: "2013 – 2015",
-        technology: ["/icons_word.svg", "/icons_excel.svg", "/icons_outlook.svg"],
-        highlights: [
-            "Led the design and management of the company website and digital marketing presence.",
-            "Created videos, newsletters, and promotional materials using Adobe Creative Suite.",
-            "Conducted due diligence for commercial acquisitions and performed financial analyses using discounted cash flow models."
-        ],
-    },
+    
 
 ]
 
