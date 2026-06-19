@@ -1,6 +1,6 @@
 export const NavLinks = [
-    { href: '/experience', key: 'experience', text: 'experience'},
     { href: '/skills', key: 'qualifications', text: 'qualifications'},
+    { href: '/experience', key: 'experience', text: 'experience'},
    /* { href: '/work', key: 'recent projects', text: 'recent projects'}, */
    
 ];
@@ -12,58 +12,70 @@ export const socialMediaLnks = [
 ]
 
 export const heroWords = [
-  "Clear and Effective Communicator",
-  "Analytical and Steady Under Pressure",
+  "Trader and Market Professional",
   "Client-Focused Problem Solver",
-  "Strong Market Awareness",
-  "Detail-Oriented and Reliable",
-  "Calm, Professional Presence",
-  "Committed to Helping Traders Succeed",
+  "Analytical and Calm Under Pressure",
+  "Relationship Builder and Trusted Partner",
+  "Financial Services and Risk Management Experience",
+  "Clear and Effective Communicator",
+  "Driven by Continuous Learning",
 ];
 
 
 
 export const workExperience = [
 
-    {
-        title: "Charles Schwab",
-        imageUrl: "/logo_schwab.svg",
-        dates: "2024 – Present",
-        technology: [],
-        highlights: [
-            "Provide knowledgeable, client-focused support to active traders across Schwab trading platforms.",
-            "Communicate market concepts, platform tools, and order routing mechanics clearly and effectively.",
-            "Resolve complex client issues with calm, analytical thinking and attention to detail.",
-            "Collaborate with internal teams to ensure a smooth and reliable trading experience for clients."
-        ],
-    },
+{
+    title: "Charles Schwab",
+    imageUrl: "/logo_schwab.svg",
+    dates: "2024 – Present",
+    technology: [],
+    highlights: [
+        "Provide specialized support to active traders across Schwab trading platforms and products.",
+        "Explain market concepts, order execution, and platform functionality in a clear and client-focused manner.",
+        "Analyze and resolve complex trading and operational issues with accuracy and attention to detail.",
+        "Collaborate with internal partners to deliver a reliable and seamless client experience."
+    ],
+},
 
-    {
-        title: "JP Morgan Chase",
-        imageUrl: "/logos_chase.svg",
-        dates: "2015 – 2022",
-        technology: [],
-        highlights: [
-            "Managed credit exposures within the Corporate Liability portfolio, ensuring sound risk posture.",
-            "Performed detailed financial statement analysis and evaluated business performance trends.",
-            "Engaged with senior stakeholders to assess risk, support decision-making, and maintain portfolio quality."
-        ],
-    },
+{
+    title: "JPMorgan Chase & Co.",
+    imageUrl: "/logos_chase.svg",
+    dates: "2017 – 2022",
+    technology: [],
+    highlights: [
+        "Managed risk within the Corporate Liability portfolio and supported sound credit decisions.",
+        "Performed financial statement analysis and evaluated business performance trends.",
+        "Worked with senior stakeholders to assess exposures and maintain portfolio quality.",
+        "Applied analytical and relationship management skills to support risk management initiatives."
+    ],
+},
 
-    {
-        title: "Professional & Contract Work",
-        imageUrl: "/logo-blk.svg",
-        dates: "2013 – Present",
-        technology: [],
-        highlights: [
-            "Provide selective freelance support across design, illustration, automation, and content development.",
-            "Create graphics, visual assets, and multimedia materials for books, online courses, and creative projects.",
-            "Develop small, purpose-built tools using Python and modern frameworks to streamline workflows and solve practical problems.",
-            "Contribute visual and educational materials to specialized projects as needed, focusing on clarity and effective communication."
-        ],
-    },
+{
+    title: "JPMorgan Chase & Co.",
+    imageUrl: "/logos_chase.svg",
+    dates: "2015 – 2017",
+    technology: [],
+    highlights: [
+        "Delivered personalized banking and financial solutions to affluent clients as a Private Client Services Banker.",
+        "Built long-term client relationships through proactive service and needs-based conversations.",
+        "Identified opportunities across deposits, lending, and investment referrals while maintaining a high standard of client experience.",
+        "Partnered with specialists and advisors to help clients pursue their financial goals."
+    ],
+},
 
-    
+{
+    title: "Independent Development & Design",
+    imageUrl: "/logo-blk.svg",
+    dates: "2013 – Present",
+    technology: [],
+    highlights: [
+        "Develop custom software tools and automation solutions using Python and modern frameworks.",
+        "Create graphics, illustrations, and multimedia assets for books, courses, and digital projects.",
+        "Produce educational and creative content with an emphasis on clarity and visual communication.",
+        "Support a variety of independent technical and creative projects spanning software, design, and content development."
+    ],
+},
 
 ]
 
