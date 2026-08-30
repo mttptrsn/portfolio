@@ -3,4 +3,5 @@ export type FormState = {
     email: string;
     subject: string;
     message: string;
+    website: string;
 };
